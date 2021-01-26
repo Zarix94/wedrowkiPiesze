@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<link rel="stylesheet" type="text/css" href="styles/login.css">
+<link rel="stylesheet" type="text/css" href="styles/index.css">
+<meta charset="UTF-8">
+<title>Rejestr wędrówek pieszych</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+
+</head>
+<body>
+  <!-- Głowny kontener zawierający ciało strony -->
+  <div id="top-holder">
+    <header id="header-holder">
+      <div id="logo-holder">
+        <img id="logo" title="Strona główna" alt="logo"
+          src="img/logo.png" />
+      </div>
+    </header>
+    <!-- Menu nawigacyjne -->
+    <nav id="nav-menu">
+      <div id="menu-holder">
+        <ul>
+          <li><a href="main.html" class="nav-link"
+            style="padding-left: 30px"> Strona główna</a></li>
+        </ul>
+        <ul>
+          <li><a href="trips.html" class="nav-link">Wycieczki</a></li>
+        </ul>
+        <ul id="login-menu">
+          <li><a href="login.html" class="nav-link">Logowanie</a></li>
+        </ul>
+        <ul id="register-menu">
+          <li><a href="register.html" class="nav-link">Rejestracja</a></li>
+        </ul>
+        <ul id="logout-menu">
+          <li><a href="" class="nav-link">Wyloguj</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div id="main-holder">
+    <!-- Tu wyświetlamy tresc podstron np. main.html -->
+    <div id="content-holder">
+      <div id="login-holder">
+        <div id="login-error-holder"></div>
+        <div style="display: flex">
+          <div style="width: 100px">
+            <label>Login</label>
+          </div>
+          <input class="required-input" id="it-login" type="text">
+        </div>
+        <div style="display: flex; padding-top: 10px;">
+          <div style="width: 100px">
+            <label>Hasło</label>
+          </div>
+          <input class="required-input" id="it-password" type="password">
+        </div>
+        <div>
+          <button id="btn-login" class="trip-button"
+            style="width: 100px; float: right;">Zaloguj</button>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+      <div id="copyrights">
+        <h5>Rejestr wędrówek pieszych, Sebastian Nazaruk Z713</h5>
+        <h5>
+          <a href="https://www.freepik.com/vectors/logo">Logo vector
+            created by pikisuperstar - www.freepik.com</a>
+        </h5>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

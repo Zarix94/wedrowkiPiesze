@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<link rel="stylesheet" type="text/css" href="styles/index.css">
+<link rel="stylesheet" type="text/css" href="styles/trips.css">
+<link rel="stylesheet" type="text/css"
+  href="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.23/datatables.min.css" />
+<script type="text/javascript"
+  src="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.23/datatables.min.js"></script>
+
+<meta charset="UTF-8">
+<title>Rejestr wędrówek pieszych</title>
+
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" src="js/trips.js"></script>
+
+</head>
+<body>
+  <!-- Głowny kontener zawierający ciało strony -->
+  <div id="top-holder">
+    <header id="header-holder">
+      <div id="logo-holder">
+        <img id="logo" title="Strona główna" alt="logo"
+          src="img/logo.png" />
+      </div>
+    </header>
+    <!-- Menu nawigacyjne -->
+    <nav id="nav-menu">
+      <div id="menu-holder">
+        <ul>
+          <li><a href="main.html" class="nav-link"
+            style="padding-left: 30px"> Strona główna</a></li>
+        </ul>
+        <ul>
+          <li><a href="trips.html" class="nav-link">Wycieczki</a></li>
+        </ul>
+        <ul id="login-menu" style="display: none">
+          <li><a href="login.html" class="nav-link">Logowanie</a></li>
+        </ul>
+        <ul id="register-menu" style="display: none">
+          <li><a href="register.html" class="nav-link">Rejestracja</a></li>
+        </ul>
+        <ul id="logout-menu" style="display: none">
+          <li><a href="" class="nav-link">Wyloguj</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div id="main-holder">
+    <div id="content-holder">
+      <div style="width: 100%">
+        <button id="new-trip" class="trip-button">Nowa
+          wycieczka</button>
+        <button id="save-trip" class="trip-button" style="display: none">Zapisz
+          wycieczkę</button>
+        <button id="add-place" class="trip-button" style="display: none">Dodaj
+          odwiedzone miejsce</button>
+      </div>
+      <div id="trip-list"></div>
+      <div id="trip-details">
+        <div id="trip-info">
+          <div style="display: flex">
+            <div style="width: 150px">Nazwa:</div>
+            <div class="trip-name">
+              <input id="it-trip-name" />
+            </div>
+          </div>
+          <div style="display: flex">
+            <div style="width: 150px">Data rozpoczęcia:</div>
+            <div class="trip-start">
+              <input id="it-trip-start" />
+            </div>
+          </div>
+          <div style="display: flex">
+            <div style="width: 150px">Data zakończenia:</div>
+            <div class="trip-start">
+              <input id="it-trip-stop" />
+            </div>
+          </div>
+          <div style="display: flex">
+            <div style="width: 150px">Ilość km:</div>
+            <div class="trip-length">
+              <input id="it-trip-length" />
+            </div>
+          </div>
+          <div style="width: 150px">Opis:</div>
+          <div id="trip-description">
+            <textarea id="it-trip-description" rows="10" cols="100"></textarea>
+          </div>
+          <div>Odwiedzone miejsca</div>
+          <ul id="place-list">
+
+          </ul>
+
+
+        </div>
+        <div id="miniatures"></div>
+      </div>
+    </div>
+    <footer>
+      <div id="copyrights">
+        <h5>Rejestr wędrówek pieszych, Sebastian Nazaruk Z713</h5>
+        <h5>
+          <a href="https://www.freepik.com/vectors/logo">Logo vector
+            created by pikisuperstar - www.freepik.com</a>
+        </h5>
+      </div>
+    </footer>
+  </div>
+  <div id="add-place-dialog-holder" style="display: none">
+    <div id="add-place-dialog">
+      <div style="display: flex">
+        <div style="width: 150px">Odwiedzone miejsce:</div>
+        <div class="place-name">
+          <input id="it-place-name" />
+        </div>
+      </div>
+      <div style="display: flex">
+        <div style="width: 150px">Data zakończenia:</div>
+        <div class="place-date">
+          <input id="it-place-date" />
+        </div>
+      </div>
+      <button id="close-place" style="width: 100px;" class="trip-button">Zamknij</button>
+      <button id="save-place" style="width: 100px;" class="trip-button">Dodaj</button>
+    </div>
+  </div>
+</body>
+</html>

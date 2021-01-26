@@ -1,0 +1,41 @@
+#trip-list {
+  width: 50%;
+  float: left;
+}
+
+#trip-details {
+  width: 50%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#content-holder {
+  display: block !important;
+}
+
+.trip-name {
+  padding-bottom: 20px !important;
+}
+
+#trip-info div {
+  padding-bottom: 10px;
+}
+
+#add-place-dialog-holder {
+  background: #00000091;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#add-place-dialog {
+  width: 400px;
+  background: white;
+  padding: 25px;
+  border: 1px solid black;
+  position: relative;
+  margin: auto;
+  top: 50%;
+}

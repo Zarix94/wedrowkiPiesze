@@ -1,0 +1,11 @@
+#login-holder {
+  width: 300px;
+  margin: auto;
+  padding: 20px 20px 0px 20px;
+  border: 1px solid #949494;
+  background: white;
+}
+
+#login-error-holder {
+  color: red;
+}

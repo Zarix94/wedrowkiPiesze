@@ -1,0 +1,11 @@
+#register-holder {
+  width: 400px;
+  margin: auto;
+  padding: 20px 20px 0px 20px;
+  border: 1px solid #949494;
+  background: white;
+}
+
+#register-error-holder {
+  color: red
+}
